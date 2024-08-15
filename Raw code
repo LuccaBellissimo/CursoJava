@@ -1,0 +1,31 @@
+//Area of ​​a circle calculator
+//Calculadora da area de um circulo
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Ex1_Calcualdora_Area_Circulo {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double area;
+		double pi;
+		double raio;
+		
+		pi = 3.14159;
+		
+		System.out.print("Valor do raio: ");
+		raio = sc.nextDouble();
+				
+		sc.close();
+		
+		raio = Math.pow(raio, 2);
+		area = pi*raio;
+		
+		System.out.printf("Area = %.4f%n", area);
+	}
+
+}
